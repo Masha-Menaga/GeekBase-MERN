@@ -1,0 +1,41 @@
+HTML - structured 
+CSS - styling / designing
+JS - interactivity
+
+why we use html?
+sturucrued manner
+text, images,links,videos
+
+How does html works?
+browser interpreter
+
+html5
+<audio>
+<video>
+<article>
+<section>
+
+html5 - standard mode 
+html5 older - quirks mode
+
+Formatting tags
+bold,italic,underline,para,pre
+
+inline element
+<b>
+<i>
+<u>
+<mark>
+<strong>
+
+
+block element
+<p>
+<pre> 
+<div>
+<article>
+
+
+
+
+
