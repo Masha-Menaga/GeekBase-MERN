@@ -1,0 +1,88 @@
+HTML - structured 
+CSS - styling / designing
+JS - interactivity
+
+why we use html?
+structured manner
+text, images, links, videos
+
+How does html works?
+browser interpreter
+
+html5
+<audio>
+<video>
+<article>
+<section>
+
+html5 - standard mode 
+html5 older - quirks mode
+
+Formatting tags
+bold, italic, underline, para, pre
+
+inline element
+<b>
+<i>
+<u>
+<mark>
+<strong>
+
+
+block element
+<p>
+<pre> 
+<div>
+<article>
+
+header 
+h1-h6
+
+links
+URL, Book Mark
+a
+
+
+list
+
+ol - ordered list
+ul - unordered list
+dt - definition list
+
+ol
+
+
+
+dl-dt-definition term
+dd- definition description
+
+TABLE
+tr,th,td, thead, tbody
+
+merge cell - rowspan, colspan
+
+table Attribute
+border, cellpadding, cell sapcing
+
+
+DIV -container element
+
+semantic elements
+
+meaningful
+
+<header><nav><main><section><footer><details><summary><article><aside>
+
+Entity and Symbols
+Special charcters
+3 types
+Named,Numeric ,Hexa Decimal
+
+forms
+form validation
+required
+pattern - [A-za-z]{15,}
+min and max
+
+Dropdown
+
