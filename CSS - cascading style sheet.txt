@@ -1,0 +1,48 @@
+CSS - cascading style sheet
+
+3 ways
+inline css
+internal css
+external css
+
+syntax
+
+selector{property:value}
+
+selector
+
+basic -simple -tag
+class - .
+id - #
+
+universal selector -*
+
+color:
+Named color -red
+RGB - Red, green,blue(rgb(0,0,0)
+hsl - hue saturation lightness (hsl(0,0%,0%
+Unicode value - #000;
+
+box Model :
+margin - space outside an element
+border - border around the element
+padding - space between content and its border
+content - width, height
+
+Text Properties :
+text-align
+text-decoration
+text-transform
+text spacing:  letter-spacing, word spacing
+line-height - default 18px
+text-shadow
+text-indent
+
+Font Properties:
+font-family
+font-size - default 16px
+font-weight -default 100
+font-style
+font-variant
+
+
