@@ -7,7 +7,9 @@ external css
 
 syntax
 
-selector{property:value}
+selector{
+property:value
+}
 
 selector
 
@@ -23,10 +25,15 @@ RGB - Red, green,blue(rgb(0,0,0)
 hsl - hue saturation lightness (hsl(0,0%,0%
 Unicode value - #000;
 
+background-color
+background-image
+background-repeat
+
 box Model :
 margin - space outside an element
 border - border around the element
 padding - space between content and its border
+border radius - rounded cornors
 content - width, height
 
 Text Properties :
@@ -45,4 +52,26 @@ font-weight -default 100
 font-style
 font-variant
 
+DAY6
+Position and layout
 
+position
+static(default),relative,absolute,fixed,sticky
+
+Display
+block,inline,inline-block
+flex,grid
+flex
+align-items:center; vertically-align center
+access only in parent element
+display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+
+pseudo classes
+:
+li:hover
+a:active
+
+pseudo element
