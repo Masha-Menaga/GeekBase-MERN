@@ -75,3 +75,55 @@ li:hover
 a:active
 
 pseudo element
+::
+
+links
+pseudo classes
+a:link
+a:visited
+a:hover
+a:active
+
+list
+list-style-type:none
+
+table
+border
+width,height
+spacing
+
+DAY 7
+
+position Example
+
+z-index - controls stacking of elements
+
+Grid
+2 dimentional layout
+display:grid
+gap: 
+grid-template-columns: 1fr 3fr; - width
+  grid-template-rows: 100px 100px; - rows
+fr-fraction 
+
+
+transition
+transition-property
+transition-duration
+transition-timing-function
+transition-delay
+
+transition
+ transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 2s;
+
+Animation
+moving,rotating like
+@keyframe-Animation Steps
+animation-name: keyframe name
+animation-duration: - how long animation runs
+animation-timing-function: speed
+animation-delay: when animation starts
+animation-iteration-count: -how many times it repeats
+animation-direction: normal/reverse/alternate
