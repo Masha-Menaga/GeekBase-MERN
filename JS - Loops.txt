@@ -1,0 +1,61 @@
+JS - Loops
+for
+while
+do-while
+for ... in
+for ... of
+
+for(initialization;condition;increment/decrement){
+//block of code
+
+}
+
+initialize;
+while(condition){
+//block code 
+increment/decrement
+}
+
+do-while
+initialize
+do{
+/block code
+increment/decrement
+}while(condition)
+
+for ..in loop ES6 - object {key:value, key:Value....}
+
+
+for ..of loop ES6 - array [10,20,30]
+
+functions
+reusable block of codes . function ES6 =>
+
+function functionName(){
+//block of codes body of function
+return ;// optional
+}
+function call()
+
+String
+immutable one - cannot be change
+
+String methods
+charAt(index) - at(index)
+at(-1)
+replace()
+replaceAll()
+
+substring ()- substring(startindex,endindex)
+
+uppercase
+toUpperCase()
+
+concadinate
++
+concat()
+
+trim() // unwanted white spaces remove
+  masha   
+
+
