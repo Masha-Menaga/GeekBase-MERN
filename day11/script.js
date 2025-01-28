@@ -54,7 +54,10 @@ for (let value of arr) {
 function add(m, n) {
   let sum = m + n;
   console.log("Sum of " + m, n + "=" + sum);
-  console.log(`sum of ${m} + ${n} = ${sum}`);
+  console.log(`sum of ${m}  ${n} = ${sum}`);
+}
+function add() {
+  //
 }
 add(20, 5);
 
@@ -64,14 +67,15 @@ function greet(name) {
 greet("Masha");
 
 // String
-let Name = "Mashaaaaa";
+let Name = "Mashaaasa";
 console.log(Name);
 
-console.log(Name.charAt(0));
+CharAt(index); //
+console.log(Name.charAt(1));
 
 console.log(Name.charAt(2));
 
-console.log(Name.at(-2));
+console.log(Name.at(2));
 
 Name[4] = "b";
 console.log(Name);

@@ -58,4 +58,30 @@ concat()
 trim() // unwanted white spaces remove
   masha   
 
+Day12
+Split() - string to Array
+
+indexOf - indexof the string 1st Occurance
+lastIndexOf -last acuurance of char
+
+includes() - find true/false
+
+closure - inner function access if the outer function executed
+
+Array 
+multiple values assign to a single variable (list of values)
+mutable - can be change
+
+Array Methods
+push() - add last
+pop() -delete last
+shift() -delete first element
+unshift()-add first element
+concat()- combaine 
+slice()-  portion
+indexOf
+
+
+
+
 
