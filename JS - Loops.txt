@@ -81,6 +81,22 @@ concat()- combaine
 slice()-  portion
 indexOf
 
+Day13
+splice()- Remove the portion /replace
+includes() - is include in my array (find)
+
+array to string
+tostring - only commas
+join() - custom string
+
+sorting -ascending order
+
+reverse()
+
+array Looping
+for loop -array iteration
+
+array value-to another variable
 
 
 
