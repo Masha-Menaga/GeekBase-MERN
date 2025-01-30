@@ -98,6 +98,18 @@ for loop -array iteration
 
 array value-to another variable
 
+Day14
+Array Iteration
+forEach()
+map()
+filter()
+
+2/5=2 2/4=2
+
+reduce  - acc
+some() - if the element is in array (true/false)
+spread(...) - Merging Array
+
 
 
 
