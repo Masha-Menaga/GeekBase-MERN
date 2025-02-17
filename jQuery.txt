@@ -1,0 +1,23 @@
+jQuery
+JS Library - fast,lightweighted, Simply HTML Documents Manipulation, event handling, animation AJAX.
+
+How to Use jquery
+CDN - Content Delivery Network
+download local
+link Connect
+
+Syntax
+$(selector).action()
+
+Selecting Element
+$("#id") - refer id
+$(".class") - refer classname
+$("tagname")
+
+Handles Event
+.click()
+.dblclick()
+.mouseenter()
+.mouseleave()
+.keydown()
+.keyup()
