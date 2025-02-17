@@ -110,6 +110,68 @@ reduce  - acc
 some() - if the element is in array (true/false)
 spread(...) - Merging Array
 
+Day 15
+Object in jS
+object is Key-value pair used to store a structured data
+
+object properties
+key -value pair
+keys-(string/symbols)
+value-can be any type
+
+object methods 
+function defined as a object property
+
+object Iteration
+for ...in loop
+Object.keys()
+
+Timer
+allows to execute the code after delay/repeatedly at intervals
+2 types
+setTimout - after some delay - milliseconds (1000ms=1s)
+clearTimeout
+
+setInterval - 
+let intervalId=setInterval(function,interval)
+
+Day 17
+Error Handling
+error: - unexpected issue - occur during the code execution
+
+common :
+syntax error
+runtime error
+logical error
+
+why handle errors:
+prevent - application/website crashing
+provide - useful feedback to users/developers
+
+error:
+Syntax Error - 
+runtime Error - 
+logical error - 
+
+try-catch -used to handle error in a block of code
+syntax:
+try{
+//code that may throw an error
+}
+catch(error){
+//code to handle the error
+}
+
+finally - Run always - even if no errors occurred
+
+DOM - document object Model
+Programming Inteface
+
+Accessing Element - getElementById(),getelementByTagName,getelementByClassName,querySelector,querySelectorAll()
+Creating Add/Remove Element- createElement(),appendChild,removeChild,replaceChild(
+Modifying Content & attributes - innerHTML,setAttributes,removeAttribute()
+
+
 
 
 

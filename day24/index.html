@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("h1").click(function () {
+          $(this).css("color", "red");
+        });
+        $("#btn").click(function () {
+          $(".text").hide();
+        });
+        $("#btn1").click(function () {
+          $(".text").show();
+        });
+        $("#alert").dblclick(function () {
+          alert("Button Double-Clicked!");
+        });
+        $("h1").mouseenter(function () {
+          $(this).css("color", "pink");
+          $(this).css("background-color", "black");
+        });
+        $("h1").mouseleave(function () {
+          $(this).css("color", "black");
+          $(this).css("background-color", "white");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Hi Good Evening!</h1>
+
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cum
+      officiis cumque iste doloribus porro fuga nesciunt dolorum veniam,
+      molestias repellat odit, animi in culpa molestiae, magnam perspiciatis
+      modi expedita?
+    </p>
+    <button id="btn">Hide</button>
+    <button id="btn1">Show</button>
+    <button id="alert">alert</button>
+  </body>
+</html>
