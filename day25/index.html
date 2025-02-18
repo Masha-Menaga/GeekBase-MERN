@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#fade").click(function () {
+          $("div").fadeToggle();
+        });
+        $("#slide").click(function () {
+          $("div").slideToggle(3000);
+        });
+        $("#btn").click(function () {
+          $("#hi").text("New Text");
+          $("#hi").css("color", "red");
+        });
+        $("#changeText").click(function () {
+          $("#hi").text("New Text");
+          $("#hi").css("color", "red");
+        });
+        $("#add").click(function () {
+          $("#hi").addClass("highlight");
+        });
+        $("#remove").click(function () {
+          $("#hi").removeClass("highlight");
+        });
+        $("#changeimage").dblclick(function () {
+          $("img").attr("src", "./bird1.jpg");
+        });
+
+        $("#submit").click(function () {
+          $("#list").append("<li>" + $("#input").val() + "</li>");
+        });
+        $("#delete").click(function () {
+          $("#list").children().first().remove();
+        });
+        $("#input").keydown(function () {
+          console.log("Key Pressed");
+        });
+        $("#input2").keyup(function () {
+          console.log("Key Release");
+        });
+      });
+    </script>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+      }
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hi</div>
+    <button id="fade">fade</button>
+    <button id="slide">slide</button>
+    <button id="btn">para</button>
+    <p id="hi">Hi Guys</p>
+    <button id="changeText">Change Text and Color</button>
+    <button id="add">Add Hightlight class</button>
+    <button id="remove">Remove Hightlight Class</button>
+    <button id="changeimage">change image</button>
+    <img src="./bird.jpg" />
+    <input id="input" />
+    <input id="input2" />
+    <button id="submit">submit</button>
+    <button id="delete">Delete</button>
+    <ol id="list"></ol>
+  </body>
+</html>

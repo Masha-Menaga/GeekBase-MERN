@@ -2,6 +2,7 @@ jQuery
 JS Library - fast,lightweighted, Simply HTML Documents Manipulation, event handling, animation AJAX.
 
 How to Use jquery
+code integration
 CDN - Content Delivery Network
 download local
 link Connect
@@ -18,6 +19,21 @@ Handles Event
 .click()
 .dblclick()
 .mouseenter()
-.mouseleave()
-.keydown()
-.keyup()
+.mouseleave() 
+.keydown() // trigger when key pressed
+.keyup()  // trigger when key released
+
+Effects and animation
+.hide()
+.show()
+.fadeout(), fadeToggle()
+.slideup(), slidedown(),slideToggle()
+
+Manipulation HTML with CSS
+css call with in jquery
+
+Change Image
+img - attr - src
+
+List - append (), remove()
+Input Submit
