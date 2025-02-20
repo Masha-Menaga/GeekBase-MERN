@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      class Car {
+        constructor(brand, model) {
+          this.brand = brand;
+          this.model = model;
+        }
+        start() {
+          console.log(`${this.brand} ${this.model} is starting...`);
+        }
+      }
+      const myCar = new Car("Toyata", "Ford");
+      myCar.start();
+
+      class BankAccount {
+        #balance;
+        constructor(balance) {
+          this.#balance = balance;
+        }
+        getbalance() {
+          return this.#balance;
+        }
+      }
+      const account = new BankAccount(1000);
+      console.log(account.getbalance());
+
+      class Animal {
+        constructor(name) {
+          this.name = name;
+        }
+        makesound() {
+          console.log(`${this.name} makes a sound`);
+        }
+      }
+      class Dog extends Animal {
+        bark() {
+          console.log(`${this.name} barks`);
+        }
+      }
+
+      const dog = new Dog("Buddy");
+      dog.makesound();
+      dog.bark();
+    </script>
+  </head>
+  <body>
+    Hi Guys... v8 Engine - Run time Environment
+  </body>
+</html>

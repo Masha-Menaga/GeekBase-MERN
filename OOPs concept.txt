@@ -1,0 +1,11 @@
+OOPs concept
+object oriented Programming - code reusable
+
+Concepts
+Classes - blueprint of creating Object
+Object - instance of Class
+Encapsulation - Data Hiding- data private inside a class #  - wrapping of datas
+Inheritance - code reusability - child class can inherit properties and methods from a parent class
+Abstraction -  essential functionalist
+polymorphism - method overriding 
+
