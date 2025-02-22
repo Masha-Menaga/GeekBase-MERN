@@ -1,0 +1,83 @@
+React
+JS Library - building User Interfaces
+Developed By Meta (Facebook)
+SPA - Single page Application 
+dynamic and Interactive Web application
+
+Why use React
+jquery js - Manual DOM 
+React Virtual DOM
+
+Messy Codes
+Declarative - command - preform virtual DOM
+
+Component - Code Reusability 
+
+React Key Points
+
+React JSX
+Java Script XML - HTML with in JS
+Readable code Format
+Easy to understand
+
+Component  - Reusable Blocks
+
+Props - property - passing the data b/w Components
+
+State - stores Dynamic Data & re-renders UI automatically
+
+Hooks - function - manage State  (useState(),useEffect())
+prefix - use
+
+js run time Environment - v8 engine
+
+React Js work Seprately with the help node.js
+
+node js - opensource js run time environment
+developed by Google  libo-library - (C++)
+
+Notes for React:
+React Current - react.dev
+React Legacy code (old version) - legacy.react.org
+
+React app install - 2 way
+
+cra - create react app
+vite - Third party react app
+
+react org recommend - vite
+
+vite  - Large Scalling Company Projects
+
+npx create-react-app app-name
+
+Start the APP - npm start 
+
+npx - react pre defined folders auto generated
+
+folder Structure
+README.md - mark down  - like a project Documentation key - plain text
+
+package.json - projects meta Details stores
+
+eslintConfig -  showing the logical Errors - warnings
+
+package-lock.json - Record the Exact versions of dependencies installed.
+all memners in a team use same version
+
+node-modules - 
+store all dependencies & packages  - auto generated
+
+.gitignore 
+Every React app having their own git
+
+
+
+
+
+ 
+
+
+
+
+
