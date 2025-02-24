@@ -72,7 +72,24 @@ store all dependencies & packages  - auto generated
 Every React app having their own git
 
 
+wrapper component - 
 
+import and Export
+use the functions and datas from one file (component) to another (component)
+export - 2 types
+named export - 
+default export - 1
+
+component name starts with UpperCase (Pascal case)
+hiTharunRagul - camel case
+
+<></> - fragment - avoid unnecessary div
+
+refresh- Reloading the entire page
+render - updating only the necessary part (updation/changes occurs in state/props)
+
+State Management
+let is not working in React
 
 
  
