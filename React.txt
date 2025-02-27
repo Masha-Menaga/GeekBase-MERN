@@ -90,6 +90,38 @@ render - updating only the necessary part (updation/changes occurs in state/prop
 
 State Management
 let is not working in React
+if State Update Occur component will render
+
+Hooks
+functions
+prefix - use(useState,useEffect,useContext,useRef,...)
+useState - State Mangement 
+syntax
+[state,stateUpdatingfunction]=useState(initialization)
+eg:[count,setCount]=useSate(0)
+
+initialization 
+0,- integer/numeric
+"", - String
+true/false - Boolean
+Array
+Object
+
+
+ternary operator
+condition?true:false
+  short form -if else
+
+React Developer Tool - Dev Tool
+
+diff bw State and Props
+state - internal component data  - change 
+props - external component data - from parent to child - one way- child immutable one  (Read-only)
+
+
+Props - property
+External Data - immutable one -  cannot be change (within child)
+
 
 
  
