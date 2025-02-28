@@ -1,12 +1,12 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Counter from './Counter';
 
 function App() {
 
-  const [list, setList] = useState(["apple", "banana", "orange"])
-  const [fruits, setFruits] = useState([{ id: 1, name: "grapes" }, { id: 2, name: "Mango" }])
+  const [list, setList] = useState(["apple", "banana"])
+  const [fruits, setFruits] = useState([{ id: 1, name: "grapes" }, { id: 2, name: "Mango" }, { id: 3, name: "Orange" }])
   const [count, setCount] = useState(0)
   function increment() {
     setCount(count + 1)
@@ -14,6 +14,11 @@ function App() {
   function decrement() {
     setCount(count - 1)
   }
+
+  useEffect(() => {
+    console.log("Renderring Effect")
+  }, [count])
+
   return (
     <div>
       <ul>

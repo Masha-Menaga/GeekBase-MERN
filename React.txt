@@ -121,6 +121,30 @@ props - external component data - from parent to child - one way- child immutabl
 
 Props - property
 External Data - immutable one -  cannot be change (within child)
+Disadvantage - Props Drilling
+Solve:
+Component Composition
+Context Api
+Redux - third Party Library
+
+Use Effect
+Handle the Side Function
+Fetch data from an API
+updating DOM
+Events, Timers
+
+Syntax:
+useEffect(()=>{
+
+})
+
+3 types
+1. continuedly run - render
+2. one time run - empty array 
+3. dependency change - run
+
+
+
 
 
 
