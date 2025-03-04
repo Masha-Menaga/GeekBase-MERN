@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Counter from './Counter';
+import Button from './Button';
+import CounterContext from './CounterContext';
 
 function App() {
 
@@ -27,10 +29,20 @@ function App() {
       <ul>
         {fruits.map((item) => (<li key={item.id}>{item.name}</li>))}
       </ul>
-      <Counter data={count} add={increment} sub={decrement} />
+      {/* Component Composition */}
+
+      <Counter data={count} >
+        <Button text="increment" func={increment} />
+        <Button text="decrement" func={decrement} />
+      </Counter>
+
+      {/* <Counter data={count} add={increment} sub={decrement} /> */}
 
       {/* <button onClick={increment}>increment</button>
       <button onClick={decrement}>decrement</button> */}
+      <CounterContext.Provider value={{ count, increment, decrement }}>
+        <Counter />
+      </CounterContext.Provider>
 
 
     </div>

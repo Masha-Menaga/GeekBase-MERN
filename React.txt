@@ -145,10 +145,35 @@ useEffect(()=>{
 
 
 
+Props Drilling - Avoid
+Component Composition
+context API - useContext
+redux Third Party Library
+
+Component Composition - Wrapper Component
+
+Context API - UseContext
+3 Steps
+1. create Context
+2. provide value
+3. using the context
+
+create Context 
+const CounterContext = createContext();
+
+if(a<b)
+print b is bigger
+else
+print a is bigger
+
+if(a<b)?print b is bigger:print a is bigger
+
+useRef
+Its also a Hook Concept
+it refers to the DOM ELement
 
 
-
- 
+ <input/>
 
 
 
