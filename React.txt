@@ -170,10 +170,13 @@ if(a<b)?print b is bigger:print a is bigger
 
 useRef
 Its also a Hook Concept
-it refers to the DOM ELement
+refers to the DOM Element changes
+component without re-render
 
 
  <input/>
+
+reference could be passed as props - use - fowardRef () - in childComponent
 
 
 
