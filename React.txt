@@ -136,7 +136,7 @@ Events, Timers
 Syntax:
 useEffect(()=>{
 
-})
+},[count])
 
 3 types
 1. continuedly run - render
@@ -179,6 +179,10 @@ component without re-render
 reference could be passed as props - use - fowardRef () - in childComponent
 
 
+json File
 
+{"...":"...."} - {"id":"1"}
+
+asyn,await - 
 
 

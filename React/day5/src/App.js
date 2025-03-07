@@ -5,6 +5,8 @@ import CounterContext from './CounterContext';
 import { useRef, useState } from 'react';
 import Modal from './Modal';
 import Timer from './Timer';
+import ApiFetching from './ApiFetching';
+
 
 function App() {
   const fileRef = useRef(); // Creating a Reference
@@ -52,6 +54,7 @@ function App() {
       <Modal func={handleShow} ref={modelRef} />
 
       <Timer />
+      <ApiFetching />
     </>
   );
 }
