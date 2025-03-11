@@ -6,6 +6,7 @@ import { useRef, useState } from 'react';
 import Modal from './Modal';
 import Timer from './Timer';
 import ApiFetching from './ApiFetching';
+import Reduce from './Reduce';
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
       <Modal func={handleShow} ref={modelRef} />
 
       <Timer />
+      <Reduce />
       <ApiFetching />
     </>
   );

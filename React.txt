@@ -185,4 +185,28 @@ json File
 
 asyn,await - 
 
+Complex Datas Handle  - useReducer
+Arrays and Objects - state management
+heavy projects handle
+similar to useState
+follow  - dispatch , action
+
+syntax:
+const [state, dispatch]=useReducer(reducerFunction,InitailState)
+
+similar to useState
+const [state,stateUpdatingFunction]=useState(initialization)
+
+state - current State
+dispatch(action) - trigger the state update 
+reducer (state,action)- a function how to update the State
+
+array1=[10,20,30]
+array2=[20,40,50]
+newArray=[array1,array2]
+[[10,20,30][20,40,50]]
+
+newArray=[...array1,...array2]
+[10,20,30,20,40,50]
+
 
