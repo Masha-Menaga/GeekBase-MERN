@@ -7,6 +7,8 @@ import Modal from './Modal';
 import Timer from './Timer';
 import ApiFetching from './ApiFetching';
 import Reduce from './Reduce';
+import ReducerArray from './ReducerArray';
+import UseReducer from './UseReducer';
 
 
 function App() {
@@ -56,6 +58,8 @@ function App() {
 
       <Timer />
       <Reduce />
+      {/* <UseReducer /> */}
+      <ReducerArray />
       <ApiFetching />
     </>
   );
