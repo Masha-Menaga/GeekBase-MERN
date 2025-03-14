@@ -209,4 +209,29 @@ newArray=[array1,array2]
 newArray=[...array1,...array2]
 [10,20,30,20,40,50]
 
+Navigation
+Router
+Popular Library handling navigation in React Application
+Dynamic Routing allows user to navigate b/w view, layout, without a full page reload. 
+
+install - Router
+npm i react-router-dom
+
+landing page / - path
+* - Error 
+
+Link 
+html - <a> - Reload
+react  - <Link to=""></Link> - render
+
+Params - parameter - dynamic Routing - :id - useParams
+
+Nested Routes
+
+Outlet - Render the Child in React
+
+
+
+ 
+
 

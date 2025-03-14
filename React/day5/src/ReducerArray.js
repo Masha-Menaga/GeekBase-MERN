@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from 'react'
 
 const initialState = {
-    user: { name: "JaiShree", id: 1 },
+    user: { name: "Ragul", id: 1 },
     tasks: [{ name: "task1", id: 1 }],
 }
 const reducerFunc = (currentState, action) => {
@@ -44,7 +44,7 @@ const ReducerArray = () => {
             <h4>Tasks:</h4>
             <ul>
                 {taskState.tasks.map((task) => (
-                    <li key={task.id}>{task.id} - {task.name}</li>
+                    <li key={task.id}> {task.id} - {task.name}</li>
                 ))}
             </ul>
         </div>
