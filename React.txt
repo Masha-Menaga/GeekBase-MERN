@@ -230,6 +230,23 @@ Nested Routes
 
 Outlet - Render the Child in React
 
+Navigation
+Route - Defines routes (path - component mapping) - inside the <Routes>
+Link - Declarative Navigation <nav> -clickable (header navigation)
+params - id navigate
+Nested Route - Outlet - Render the child Route
+useNavigate - Hook - Programmatic Navigation - Eg: Login - Dynamic Navigation
+Navigate - Redirects automatically when render- component inside 
+
+
+API Fetching
+useEffect - 
+fetch 
+request - object
+response - json - object
+
+axios - automatically convert
+
 
 
  

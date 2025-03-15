@@ -7,24 +7,30 @@ import Services from "./components/Services";
 import Error from "./components/Error";
 import UserProfile from "./components/UserProfile";
 import Layout from "./components/Layout";
+import Login from "./components/Login";
+import { AuthProvider } from "./contexts/AuthContext";
+import ProtectiveRoute from "./components/ProtectiveRoute";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
 
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<Aboutus />} />
-          <Route path="contact" element={<Contactus />} />
-          <Route path="services" element={<Services />} />
+          <Route path="/" element={<Layout />}>
+            <Route index element={<ProtectiveRoute><Home /></ProtectiveRoute>} />
+            <Route path="about" element={<ProtectiveRoute><Aboutus /></ProtectiveRoute>} />
+            <Route path="contact" element={<ProtectiveRoute><Contactus /></ProtectiveRoute>} />
+            <Route path="services" element={<Services />} />
 
-          <Route path="/:id" element={<UserProfile />} />
-
+            {/* <Route path="/:id" element={<UserProfile />} /> */}
+          </Route>
+          <Route path="login" element={<Login />} />
           <Route path="/*" element={<Error />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
 
   );
 }
