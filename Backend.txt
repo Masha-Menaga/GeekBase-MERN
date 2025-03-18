@@ -1,0 +1,75 @@
+backend
+request-response cycle
+user(frontEnd)->request--->Server --->DB-->response-->user
+
+request-->response
+error msg Show -- > try,catch block
+
+front-end -> Client side ->userinteraction ->Browser
+backend-end ->Server-side ->logic,data processing,security -> server& database
+
+
+user intraction (Login button) -> Frontend Request (Nodejs+Express.js)-> Backend Process (Fetch data from MongoDB)->Response FrontEnd (Login Successful)
+
+Why  do we Use Node.js?
+JS , no need to learn another language
+fast development for Full stack application
+
+DB  - Data Base
+SQL --> MySQL - Stores rows and Columns
+No-SQL DB --> MongoDB  -> Stores all in Documents -->Collections (more than one Collections) -- >Object_id automatic creates
+format - Like JSON ->BSON ->Binary JSON -->Access Faster (automatically Converts)
+
+
+Install
+4 things:
+1. MongoDB Server --> 
+2. MongoDB Shell --> (Commands/Query Works)
+3. MongoDB Compass --> (GUI - easy access)
+4. MongoDB Atlas  --> (Cloud Server)
+
+MongoDB Community Server
+
+MongoDB - Shell
+
+Mongoose connection and Setup:
+mongosh
+show db
+use <db-name>
+db.createCollection("user")
+show collections
+
+
+CRUD Operations
+create :
+insertOne, insertMany
+
+Read :
+find,
+find({name:"Masha"}),
+findOne({name:"Masha"}), 
+find().count(),
+find({name:"Masha"}).count(),
+find().limit(),
+find().skip(),
+find().sort()
+
+Update - updateOne, UpdateMany()
+Delete - deleteOne, deleteMany
+ 
+
+
+config> db.user.insertMany([{ name: "Masha", email:"abc@gmail.
+com"}])
+
+config> db.user.updateMany({name:"Masha"},{$set:{email:"masha@gmail.com"}})
+
+update Operators :
+$set - update and to set in document
+$unset - Remove the field from the Document
+$inc - increment a numeric field by specific amount -{$inc:{age:1}}
+$rename : Rename a field
+
+
+db.user.deleteMany({name:"Masha"})
+
