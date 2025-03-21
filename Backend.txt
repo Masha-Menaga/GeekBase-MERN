@@ -73,3 +73,71 @@ $rename : Rename a field
 
 db.user.deleteMany({name:"Masha"})
 
+Express.js
+fast,flexible,minimal Node.js FrameWork (library)
+server-side development
+
+install 
+npm i express
+
+const require     
+const express=require("express")
+const server=express();
+CommonJS module syntax
+traditional way node.js
+require->module load
+
+
+import :
+import express from "express";
+const server=express();
+ES module (ECMA syntax) syntax
+ES6 + standard
+type:module ; package.json
+
+
+CRUD Operation
+create,read,update and delete
+HTTP method
+create - POST
+read - GET
+update - PUT,PATCH
+delete - DELETE
+
+
+install
+npm i nodemon
+
+nodemon server.js
+
+npx nodemon server.js
+
+
+status Code
+success message : 200 series 
+Client-side error : 400 series
+server-Side Error : 500 series
+
+environment variable
+env file
+.gitignore
+
+How to Connect DB to server
+
+install mongoose
+get Mongoose Driver path form Atlas to .env 
+
+MVC structure Project
+M - Model - entity DB Connection,structure
+V - View - user Interface - CSR, SSR
+C - Controller - How to handle 
+
+Create Model - User.js
+create Schema
+create Collection
+
+Create Controller
+getAllStudentUser - User.find()
+
+
+

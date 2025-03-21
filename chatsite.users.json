@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "6799dfd18dcaaac003928cb6"
+  },
+  "name": "Masha",
+  "password": "masha",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679a04769dced5e3ca74015d"
+  },
+  "name": "mas",
+  "password": "masha",
+  "createdAt": {
+    "$date": "2025-01-29T10:35:34.987Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-29T10:35:34.987Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679b1e61d0e3bfe9c48e21b8"
+  },
+  "name": "Siva",
+  "password": "Masha1",
+  "createdAt": {
+    "$date": "2025-01-30T06:38:25.753Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-30T06:38:25.753Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679b2cc0f58616e6801abe15"
+  },
+  "name": "priya",
+  "password": "9aA",
+  "createdAt": {
+    "$date": "2025-01-30T07:39:44.846Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-30T07:39:44.846Z"
+  },
+  "__v": 0
+}]
