@@ -2,10 +2,14 @@ const express = require("express") // import express
 const dotenv = require("dotenv")
 const mongoose = require("mongoose");
 const { getAllStudentUser } = require("./Controller/UserController");
+const userRoutes = require("./Routes/userRoutes");
 
 const server = express();
+
 dotenv.config()
 
+server.use(morgan("dev"));
+server.use(express.json()) //  Pass Req body JSON data
 
 server.listen(process.env.PORT, () => {
     console.log("Server is running");
@@ -30,4 +34,4 @@ server.get("/", (req, res) => {
     res.status(200).json({ message: "Successfully response gained" })
 })
 
-server.get("/studentuser", getAllStudentUser)
+server.use("/studentuser", userRoutes)
