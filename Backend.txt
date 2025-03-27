@@ -137,10 +137,35 @@ create Schema
 create Collection
 
 Create Controller
-getAllStudentUser - User.find()
+getAllStudentUser - User.find()  
+getStudentById - User.findById(req.params.id) 
+CreateStudentUser - User.create(req.body)  - if user already exist - User.findOne(req.body)
+updateStudentUser - User.findByIdAndUpdate(req.params.id, req.body) - if user already exist check with params and update
+deleteStudentUser - User.deleteOne(req.body) - if user already exist - User.findOne(req.body)
 
+
+
+Create Routes
 
 Create - HTTP - Post
+Read - HTTP - get
+Update - HTTP - put
+delete - HTTP - delete
+
+userRoutes.get("/", getAllStudentUser)
+userRoutes.get("/:id", getStudentById)
+userRoutes.post("/", createStudentUser)
+userRoutes.put("/:id", updateStudentUser)
+userRoutes.delete("/", deleteStudentUser)
+
+Difference b/w req.params, req.query, req.body
+
+		req.params			req.query			req.body
+Data Location -	URL Path			After ? the URL query String	HTTP request Body
+Purpose	      -	to identify specific location	to filter,search / pass data	Data in JSON
+Eg.	      -	/user/:id			/user?name=masha		{"name":"masha"}
+Methods	      -	GET,DELETE			GET				POST,PUT,PATCH	
+
 
 Error Handling
 
@@ -149,6 +174,29 @@ middleware - morgan - developer support - helps to developers -debugging
   http request and response loggings
 
 install - npm i morgan
+
+Express - Error Handling
+middleware function,  -
+ 4 parameters - (err,req,res,next)
+server.use(ErrorHandlers)
+
+Validation - predefined keys
+type,
+required,
+unique,
+minlength
+maxlength
+match
+min
+max
+
+Custom key
+validate:{
+validator:Number.isInteger,
+message:"Age must not contain decimal value"
+}
+
+
 
 
 

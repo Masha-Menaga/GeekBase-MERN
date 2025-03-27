@@ -1,17 +1,14 @@
 const { User } = require("../Models/User");
 
-async function getAllStudentUser(req, res) {
+async function getAllStudentUser(req, res, next) {
     try {
         const users = await User.find()
         res.status(200).json({
             message: "Sucess",
-
             users,
         })
-    } catch (error) {
-        res.status(500).json({
-            message: error.message
-        })
+    } catch (err) {
+        next(err)
     }
 }
 
@@ -54,7 +51,7 @@ async function createStudentUser(req, res) {
 
 // Update student User
 
-async function updateStudentUser(req, res) {
+async function updateStudentUser(req, res, next) {
     const { name, email, password } = req.body;
     try {
         const user = await User.findByIdAndUpdate(req.params.id, req.body)
@@ -63,7 +60,7 @@ async function updateStudentUser(req, res) {
             user,
         })
     } catch (err) {
-        res.status(500).json({ message: "User not Created" })
+        next(err)
 
     }
 }

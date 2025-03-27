@@ -3,6 +3,8 @@ const dotenv = require("dotenv")
 const mongoose = require("mongoose");
 const { getAllStudentUser } = require("./Controller/UserController");
 const userRoutes = require("./Routes/userRoutes");
+const { ErrorHandlers } = require("./Middleware/ErrorHandlers");
+const morgan = require("morgan");
 
 const server = express();
 
@@ -35,3 +37,4 @@ server.get("/", (req, res) => {
 })
 
 server.use("/studentuser", userRoutes)
+server.use(ErrorHandlers)
