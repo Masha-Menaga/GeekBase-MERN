@@ -5,6 +5,7 @@ const { getAllStudentUser } = require("./Controller/UserController");
 const userRoutes = require("./Routes/userRoutes");
 const { ErrorHandlers } = require("./Middleware/ErrorHandlers");
 const morgan = require("morgan");
+const ErrorController = require("./Middleware/ErrorController");
 
 const server = express();
 
@@ -36,5 +37,6 @@ server.get("/", (req, res) => {
     res.status(200).json({ message: "Successfully response gained" })
 })
 
-server.use("/studentuser", userRoutes)
+server.use("/", userRoutes)
 server.use(ErrorHandlers)
+server.use("*", ErrorController)

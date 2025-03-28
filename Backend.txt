@@ -169,7 +169,7 @@ Methods	      -	GET,DELETE			GET				POST,PUT,PATCH
 
 Error Handling
 
-
+Globally Catch Error :
 middleware - morgan - developer support - helps to developers -debugging
   http request and response loggings
 
@@ -196,8 +196,19 @@ validator:Number.isInteger,
 message:"Age must not contain decimal value"
 }
 
+Express.js Specific Error Types:
+1. Cast Error - invalid ID , wrong format,
+2. Page not Found Error - The Requested route does not exist - 404
+3. Validation Error - invalid data is passed submit, insert,or schema validation
+4. Code Error - duplicate key error - 11000 format  
 
 
+
+ErrorType		Cause			ErrorName		HTTP Status Code
+cast error  		invalid ID format	CastError		400
+Page Not Found		No-existent routes	NotFound		404
+Validation Error	Invalid data input	ValidationError		400
+Code Error		Duplicate Key Value	code - 11000		400
 
 
 

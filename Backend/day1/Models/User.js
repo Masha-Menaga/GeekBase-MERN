@@ -1,10 +1,10 @@
-const { default: mongoose } = require("mongoose");
+const mongoose = require("mongoose");
 
 //create Schema
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        require: [true, "Name is Required"],
+        required: [true, "Name is Required"],
         unique: true,
         minlength: [5, "Use Atleast 5 Characters"],
         maxlength: [15, "Username atmost 15 characters allowed"],

@@ -3,11 +3,11 @@ const { getAllStudentUser, getStudentById, createStudentUser, updateStudentUser,
 
 const userRoutes = Router();
 
-userRoutes.get("/", getAllStudentUser)
-userRoutes.get("/:id", getStudentById)
-userRoutes.post("/", createStudentUser)
-userRoutes.put("/:id", updateStudentUser)
-userRoutes.delete("/", deleteStudentUser)
+userRoutes.get("/studentuser", getAllStudentUser)
+userRoutes.get("studentuser/:id", getStudentById)
+userRoutes.post("/studentuser/", createStudentUser)
+userRoutes.put("/studentuser/:id", updateStudentUser)
+userRoutes.delete("/studentuser", deleteStudentUser)
 
 
 
